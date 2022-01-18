@@ -8,25 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		0C56FB45279563C300750BAA /* StateAndDataFlowAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56FB44279563C300750BAA /* StateAndDataFlowAppApp.swift */; };
-		0C56FB47279563C300750BAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56FB46279563C300750BAA /* ContentView.swift */; };
+		0C56FB47279563C300750BAA /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56FB46279563C300750BAA /* TimerView.swift */; };
 		0C56FB49279563CD00750BAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C56FB48279563CD00750BAA /* Assets.xcassets */; };
 		0C56FB4C279563CD00750BAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C56FB4B279563CD00750BAA /* Preview Assets.xcassets */; };
 		0C56FB53279591B300750BAA /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56FB52279591B300750BAA /* TimeCounter.swift */; };
 		0C56FB55279598D200750BAA /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56FB54279598D200750BAA /* RegisterView.swift */; };
 		0C56FB5727959A9600750BAA /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56FB5627959A9500750BAA /* UserManager.swift */; };
 		0C56FB5927959CE100750BAA /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56FB5827959CE100750BAA /* StarterView.swift */; };
+		0C724AA427968E66009F8B79 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C724AA327968E66009F8B79 /* DataManager.swift */; };
+		0C724AA627968FFD009F8B79 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C724AA527968FFD009F8B79 /* ButtonView.swift */; };
+		0C724AA827969048009F8B79 /* ButtonAppearanceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C724AA727969048009F8B79 /* ButtonAppearanceModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C56FB41279563C300750BAA /* StateAndDataFlowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C56FB44279563C300750BAA /* StateAndDataFlowAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndDataFlowAppApp.swift; sourceTree = "<group>"; };
-		0C56FB46279563C300750BAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0C56FB46279563C300750BAA /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		0C56FB48279563CD00750BAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C56FB4B279563CD00750BAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C56FB52279591B300750BAA /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		0C56FB54279598D200750BAA /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		0C56FB5627959A9500750BAA /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		0C56FB5827959CE100750BAA /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		0C724AA327968E66009F8B79 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0C724AA527968FFD009F8B79 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		0C724AA727969048009F8B79 /* ButtonAppearanceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAppearanceModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +66,16 @@
 			isa = PBXGroup;
 			children = (
 				0C56FB44279563C300750BAA /* StateAndDataFlowAppApp.swift */,
-				0C56FB46279563C300750BAA /* ContentView.swift */,
+				0C56FB5827959CE100750BAA /* StarterView.swift */,
+				0C56FB54279598D200750BAA /* RegisterView.swift */,
+				0C56FB46279563C300750BAA /* TimerView.swift */,
+				0C56FB52279591B300750BAA /* TimeCounter.swift */,
+				0C724AA727969048009F8B79 /* ButtonAppearanceModifier.swift */,
+				0C724AA527968FFD009F8B79 /* ButtonView.swift */,
+				0C56FB5627959A9500750BAA /* UserManager.swift */,
+				0C724AA327968E66009F8B79 /* DataManager.swift */,
 				0C56FB48279563CD00750BAA /* Assets.xcassets */,
 				0C56FB4A279563CD00750BAA /* Preview Content */,
-				0C56FB52279591B300750BAA /* TimeCounter.swift */,
-				0C56FB54279598D200750BAA /* RegisterView.swift */,
-				0C56FB5627959A9500750BAA /* UserManager.swift */,
-				0C56FB5827959CE100750BAA /* StarterView.swift */,
 			);
 			path = StateAndDataFlowApp;
 			sourceTree = "<group>";
@@ -149,9 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C56FB47279563C300750BAA /* ContentView.swift in Sources */,
+				0C724AA827969048009F8B79 /* ButtonAppearanceModifier.swift in Sources */,
+				0C56FB47279563C300750BAA /* TimerView.swift in Sources */,
 				0C56FB55279598D200750BAA /* RegisterView.swift in Sources */,
+				0C724AA627968FFD009F8B79 /* ButtonView.swift in Sources */,
 				0C56FB5927959CE100750BAA /* StarterView.swift in Sources */,
+				0C724AA427968E66009F8B79 /* DataManager.swift in Sources */,
 				0C56FB53279591B300750BAA /* TimeCounter.swift in Sources */,
 				0C56FB5727959A9600750BAA /* UserManager.swift in Sources */,
 				0C56FB45279563C300750BAA /* StateAndDataFlowAppApp.swift in Sources */,

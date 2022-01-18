@@ -5,44 +5,29 @@
 //  Created by igor mekkers on 17.01.2022.
 //
 
-import Foundation
 import Combine
+import Foundation
 
 class TimeCounter: ObservableObject {
-    var objectWillChange = PassthroughSubject<TimeCounter, Never>()
+    let objectWillChange = PassthroughSubject<TimeCounter, Never>()
     var counter = 3
     var timer: Timer?
     var buttonTitle = "Start"
     
     func startTimer() {
         if counter > 0 {
-            timer = Timer.scheduledTimer(timeInterval: 1,
-                                         target: self,
-                                         selector: #selector(updateCounter),
-                                         userInfo: nil,
-                                         repeats: true
+            timer = Timer.scheduledTimer(
+                timeInterval: 1,
+                target: self,
+                selector:#selector(updateCounter),
+                userInfo: nil,
+                repeats: true
             )
-            
         }
         
         buttonDidTapped()
     }
     
-    @objc private func updateCounter() {
-        if counter > 0 {
-            counter -= 1
-        } else {
-            killTimer()
-            buttonTitle = "Reset"
-        }
-        
-        objectWillChange.send(self)
-    }
-    
-    private func killTimer() {
-        timer?.invalidate()
-        timer = nil
-    }
     private func buttonDidTapped() {
         if buttonTitle == "Reset" {
             counter = 3
@@ -53,4 +38,21 @@ class TimeCounter: ObservableObject {
         
         objectWillChange.send(self)
     }
+    
+    @objc private func updateCounter() {
+        if counter > 0 {
+            counter -= 1
+        } else {
+            killTimer()
+            buttonTitle = "Reset"
+        }
+            
+        objectWillChange.send(self)
+    }
+    
+    private func killTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
 }
+
